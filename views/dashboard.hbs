@@ -1,0 +1,29 @@
+<h1> Hi {{name}} </h1>
+
+{{#if bookmarks}}
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>Link</th>
+                <th>Title</th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each bookmarks}}
+            <tr>
+                <td><a href="/bookmarks/{{_id}}"></a><a href="{{link}}">{{link}}</a></td>
+                <td>{{title}}</td>
+                <td>{{createdAt}}</td>
+                <td></td>
+            </tr>
+
+            {{/each}}
+        </tbody>
+    </table>
+
+{{else}}
+<p>you have not saved any bookmarks</p>
+
+{{/if}}
