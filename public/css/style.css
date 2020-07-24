@@ -10,3 +10,10 @@ p
 {
     margin: 10px 0 !important;
 }
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
